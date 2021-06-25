@@ -9,6 +9,6 @@ age=(time.time()-x.st_mtime)/3600
 #print("The age of the given file is: ",age)
 
 if (age >= 1):
-    os.system('scp %s %s .' % (ssh_key, database) )
+    os.system('scp %s %s /home/pi/kiosko/' % (ssh_key, database) )
     os.system('python3 /home/pi/kiosko/create_hourly_plot.py')
 

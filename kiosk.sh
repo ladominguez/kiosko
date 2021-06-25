@@ -16,6 +16,8 @@ while true; do
 	xdotool key ctrl+Tab; #xdotool keyup ctrl+Tab;
 	currenttime=$(date +%M)
 	if [[ "$currenttime" == "01" ]]; then
+
+		/usr/bin/sudo /usr/bin/python3 /home/pi/kiosko/create_hourly_plot.py
 		
 		xdotool keydown ctrl+r; xdtool keyup ctrl+r;
 		sleep 20

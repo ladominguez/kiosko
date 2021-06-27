@@ -11,6 +11,8 @@ unclutter -idle 0.5 -root &
 
 #/usr/bin/chromium-browser --noerrdialogs --disable-infobars --kiosk http://ds.iris.edu/seismon/index.phtml http://localhost:8081/page1.html http://localhost:8081/index.html &
 /usr/bin/chromium-browser --noerrdialogs --kiosk --disable-inforbars http://ds.iris.edu/seismon/index.phtml http://localhost:8081/page1.html http://localhost:8081/index.html & 
+/usr/bin/sudo /usr/bin/python3 /home/pi/kiosko/create_hourly_plot.py
+
 while true; do
 	sleep 15
 	xdotool key ctrl+Tab; #xdotool keyup ctrl+Tab;

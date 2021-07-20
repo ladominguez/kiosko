@@ -1,8 +1,10 @@
+# I load pandas first to avoid errors while loading matplotlib
 
+import pandas
 import matplotlib.pyplot as plt
 #import numpy
 import sqlite3
-import pandas
+
 import matplotlib.dates as md
 from datetime import datetime
 
